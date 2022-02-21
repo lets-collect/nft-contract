@@ -1,0 +1,1 @@
+export default [30,"https://localhost:3000/"]
