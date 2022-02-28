@@ -1,4 +1,4 @@
-# Bollywood Hardhat Project
+# BollyCoin Hardhat Project
 
 ## 1. Installation and Deployment
 ```shell
@@ -32,4 +32,4 @@ For faster runs of your tests and scripts, consider skipping ts-node's type chec
 # Deployment
 Contract Address: https://bscscan.com/address/0x49502Fb9425c40B98bFABAdaBd0c8f36331b9645)
 
-Website: https://mint.bollywood.io/
+Website: https://mint.bollycoin.io/
