@@ -6,7 +6,7 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/utils/Context.sol";
 import "@openzeppelin/contracts/utils/Counters.sol";
 
-contract ERC721BollyCoin is ERC721Enumerable, Ownable {
+contract ERC721LetsCollect is ERC721Enumerable, Ownable {
     enum NFTType {
         Platinum,
         Gold,
@@ -29,7 +29,7 @@ contract ERC721BollyCoin is ERC721Enumerable, Ownable {
     mapping(NFTType => uint256) private __currentSupplies;
     mapping(uint256 => NFTType) private __tokenTypes;
 
-    constructor(string memory baseURI_) ERC721("Bollycoin", "BLC") {
+    constructor(string memory baseURI_) ERC721("LetsCollect", "LCT") {
         __tokenIncrement = 0;
         setBaseURI(baseURI_);
 

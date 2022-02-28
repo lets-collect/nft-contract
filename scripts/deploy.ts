@@ -12,10 +12,10 @@ async function main() {
   // Network
   const networkName = hardhat.network.name as 'rinkeby' | 'bscTestnet' | 'bsc'
 
-  const ERC721BollyCoin = await ethers.getContractFactory('ERC721BollyCoin')
-  const erc721BollyCoinArgs = ['https://localhost:3000/']
-  const erc721BollyCoin = await ERC721BollyCoin.deploy(...erc721BollyCoinArgs)
-  await erc721BollyCoin.deployed()
+  const ERC721LetsCollect = await ethers.getContractFactory('ERC721LetsCollect')
+  const erc721LetsCollectArgs = ['https://localhost:3000/']
+  const erc721LetsCollect = await ERC721LetsCollect.deploy(...erc721LetsCollectArgs)
+  await erc721LetsCollect.deployed()
 
   const scanURI = {
     rinkeby: 'https://rinkeby.etherscan.io',
@@ -25,9 +25,9 @@ async function main() {
 
   const contractsParams = [
     {
-      name: 'erc721BollyCoin',
-      contract: erc721BollyCoin,
-      arguments: erc721BollyCoinArgs,
+      name: 'erc721LetsCollect',
+      contract: erc721LetsCollect,
+      arguments: erc721LetsCollectArgs,
     },
   ]
   await fs.appendFileSync(
