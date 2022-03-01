@@ -1,4 +1,4 @@
-# BollyCoin Hardhat Project
+# The Letsconnect Project
 
 ## 1. Installation and Deployment
 ```shell
