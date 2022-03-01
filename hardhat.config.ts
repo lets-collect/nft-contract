@@ -24,6 +24,13 @@ const config: HardhatUserConfig = {
   solidity: '0.8.4',
   // defaultNetwork: "bscTestnet",
   networks: {
+    mainnet: {
+      url: `https://mainnet.infura.io/v3/${process.env.INFURA_KEY}`,
+      chainId: 1,
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+      timeout: 1000000,
+    },
     rinkeby: {
       url: `https://rinkeby.infura.io/v3/${process.env.INFURA_KEY}`,
       chainId: 4,
