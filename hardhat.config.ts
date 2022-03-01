@@ -26,6 +26,7 @@ const config: HardhatUserConfig = {
   networks: {
     rinkeby: {
       url: `https://rinkeby.infura.io/v3/${process.env.INFURA_KEY}`,
+      chainId: 4,
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
       timeout: 1000000,

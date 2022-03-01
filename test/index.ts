@@ -27,7 +27,7 @@ describe('ERC721LetsCollect', () => {
       (await erc721LetsCollect.balanceOf(owner.address)).toString(),
     ).to.equal('1')
     expect((await erc721LetsCollect.tokenURI(1)).toString()).to.equal(
-      'https://localhost:3000/1.json',
+      'https://localhost:3000/Plantinum/1.json',
     )
     expect(await erc721LetsCollect.tokenType(1)).to.equal('Plantinum')
     expect((await erc721LetsCollect.maxSupply('Plantinum')).toString()).to.equal(
@@ -54,7 +54,7 @@ describe('ERC721LetsCollect', () => {
       value: '2000000000000000000',
     })
     expect((await erc721LetsCollect.tokenURI(2)).toString()).to.equal(
-      'https://localhost:3000/2.json',
+      'https://localhost:3000/Gold/2.json',
     )
     expect(await erc721LetsCollect.tokenType(2)).to.equal('Gold')
     expect((await erc721LetsCollect.maxSupply('Gold')).toString()).to.equal('5')

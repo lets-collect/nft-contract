@@ -71,7 +71,15 @@ contract ERC721LetsCollect is ERC721Enumerable, Ownable {
         require(_exists(tokenId), "URI query for nonexistent token");
         return
             bytes(baseURI).length > 0
-                ? string(abi.encodePacked(baseURI, tokenId.toString(), ".json"))
+                ? string(
+                    abi.encodePacked(
+                        baseURI,
+                        __nftTypeToStrings[__tokenTypes[tokenId]],
+                        "/",
+                        tokenId.toString(),
+                        ".json"
+                    )
+                )
                 : "";
     }
 
