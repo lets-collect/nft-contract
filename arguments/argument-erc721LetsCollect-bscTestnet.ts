@@ -1,1 +1,1 @@
-export default ["https://localhost:3000/"]
+export default ["https://gateway.pinata.cloud/ipfs/QmUVK7TFyx8gGGPvVvxjNPSxUpMKg95cYqso8fWpFVBN8y/"]

@@ -29,6 +29,7 @@ const config: HardhatUserConfig = {
       chainId: 4,
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+      gasPrice: 20000000000,
       timeout: 1000000,
     },
     bscTestnet: {
