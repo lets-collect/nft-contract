@@ -13,11 +13,16 @@ async function main() {
   const networkName = hardhat.network.name as 'rinkeby' | 'bscTestnet' | 'bsc'
 
   const ERC721LetsCollect = await ethers.getContractFactory('ERC721LetsCollect')
-  const erc721LetsCollectArgs = ['https://gateway.pinata.cloud/ipfs/QmUVK7TFyx8gGGPvVvxjNPSxUpMKg95cYqso8fWpFVBN8y/']
-  const erc721LetsCollect = await ERC721LetsCollect.deploy(...erc721LetsCollectArgs)
+  const erc721LetsCollectArgs = [
+    'https://gateway.pinata.cloud/ipfs/QmbXT2iyPxPWH4tNbc9qm2VC4961p844J1jVe1APP9z8aG/',
+  ]
+  const erc721LetsCollect = await ERC721LetsCollect.deploy(
+    ...erc721LetsCollectArgs,
+  )
   await erc721LetsCollect.deployed()
 
   const scanURI = {
+    mainnet: 'https://etherscan.io',
     rinkeby: 'https://rinkeby.etherscan.io',
     bscTestnet: 'https://testnet.bscscan.com',
     bsc: 'https://bscscan.com',
