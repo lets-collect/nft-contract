@@ -1,4 +1,4 @@
-# The Letsconnect Project
+# The Letscollect Project
 
 ## 1. Installation and Deployment
 ```shell
