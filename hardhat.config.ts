@@ -25,7 +25,7 @@ const config: HardhatUserConfig = {
   // defaultNetwork: "bscTestnet",
   networks: {
     mainnet: {
-      url: `https://mainnet.infura.io/v3/${process.env.INFURA_KEY}`,
+      url: `https://mainnet.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161`,
       chainId: 1,
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],

@@ -1,0 +1,1 @@
+export default ["https://gateway.pinata.cloud/ipfs/QmbXT2iyPxPWH4tNbc9qm2VC4961p844J1jVe1APP9z8aG/"]

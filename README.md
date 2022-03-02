@@ -30,6 +30,9 @@ npx hardhat verify DEPLOYED_CONTRACT_ADDRESS --constructor-args arguments.ts
 For faster runs of your tests and scripts, consider skipping ts-node's type checking by setting the environment variable `TS_NODE_TRANSPILE_ONLY` to `1` in hardhat's environment. For more details see [the documentation](https://hardhat.org/guides/typescript.html#performance-optimizations).
 
 # Deployment
-Contract Address: https://bscscan.com/address/0x49502Fb9425c40B98bFABAdaBd0c8f36331b9645)
+## Contract Address
+Rinkeby: https://rinkeby.etherscan.io/address/0xDb0917b6E0a7fBbdba0a44dB68587Ac1153b2411\
+Mainnet: https://etherscan.io/address/0x4073d289078cF607A2FF9473B73eEEA8bC536DfB
 
-Website: https://mint.bollycoin.io/
+## Website
+https://letscollect.live/
