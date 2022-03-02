@@ -31,7 +31,7 @@ For faster runs of your tests and scripts, consider skipping ts-node's type chec
 
 # Deployment
 ## Contract Address
-Rinkeby: https://rinkeby.etherscan.io/address/0xDb0917b6E0a7fBbdba0a44dB68587Ac1153b2411\
+Rinkeby: https://rinkeby.etherscan.io/address/0xDb0917b6E0a7fBbdba0a44dB68587Ac1153b2411  
 Mainnet: https://etherscan.io/address/0x4073d289078cF607A2FF9473B73eEEA8bC536DfB
 
 ## Website
